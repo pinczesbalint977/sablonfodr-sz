@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <title>Köszönjük – BarberPro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Font (ugyanaz a hangulat) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #0b0b0c;
+      --card: #0f0f10;
+      --muted: #9aa0a6;
+      --accent: #f6f5f3;
+      --gold: #caa24f;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+      background: var(--bg);
+      color: var(--accent);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .thankyou-card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border: 1px solid rgba(255,255,255,0.03);
+      border-radius: 16px;
+      padding: 36px 28px;
+      max-width: 420px;
+      width: 90%;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.7);
+      animation: fadeUp 0.8s ease both;
+    }
+
+    h1 {
+      margin-top: 0;
+      color: var(--gold);
+      font-size: 28px;
+    }
+
+    p {
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.5;
+      margin-bottom: 28px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 18px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 600;
+      background: var(--gold);
+      color: #000;
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+
+    .btn:hover {
+      transform: scale(1.08);
+      box-shadow: 0 10px 30px rgba(202,162,79,0.4);
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="thankyou-card">
+    <h1>Köszönjük!</h1>
+    <p>
+      Az üzeneted sikeresen elküldtük.<br>
+      Hamarosan felvesszük veled a kapcsolatot.
+    </p>
+
+    <a href="index.html" class="btn">Vissza a főoldalra</a>
+  </div>
+
+</body>
+</html>

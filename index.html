@@ -129,14 +129,21 @@
         <h3>Elérhetőségek</h3>
         <p class="muted"><strong>Telefon:</strong> <a href="+36301234567 ">+36 30 123 4567</a><br><strong>Cím:</strong> Budapest, Példa utca 10</p>
       </div>
-      <form class="card contact-form" action="https://formsubmit.co/YOUR_EMAIL_HERE" method="POST">
-        <input type="hidden" name="_subject" value="Új kapcsolatfelvétel – BarberPro">
-        <input type="hidden" name="_captcha" value="false">
-        <label>Neved<input name="name" required></label>
-        <label>Email<input type="email" name="email" required></label>
-        <label>Üzenet<textarea name="message" rows="4" required></textarea></label>
-        <button class="btn btn-primary" type="submit">Küldés</button>
-      </form>
+        <form class="card contact-form"
+              action="https://formsubmit.co/YOUR_EMAIL_HERE"
+              method="POST">
+            
+          <input type="hidden" name="_subject" value="Új kapcsolatfelvétel – BarberPro">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="thank-you.html">
+            
+          <label>Neved<input name="name" required></label>
+          <label>Email<input type="email" name="email" required></label>
+          <label>Üzenet<textarea name="message" rows="4" required></textarea></label>
+            
+          <button class="btn btn-primary" type="submit">Küldés</button>
+        </form>
+
     </div>
   </div>
 </section>
